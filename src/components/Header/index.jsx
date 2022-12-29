@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import * as S from "./styles";
 
 function Header() {
+  const [small, setSmall] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () => setSmall(window.pageYOffset > 80));
+      console.log("puta")
+    }
+  }, []);
+
   return (
-    <S.Container>
+    <S.Container small={small}>
       <S.Content>
         <h1>
           Port<span>fólio</span>

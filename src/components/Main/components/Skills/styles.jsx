@@ -41,4 +41,4 @@ export const ContainerSkills = styled.div`
 
 export const Skills = styled.div`
   background-color: #bebebe6e;
-`
+`;

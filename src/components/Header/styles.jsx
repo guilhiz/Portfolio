@@ -4,14 +4,20 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  height: 80px;
-  padding: 0px 5%;
+  height: ${(props) => (props.small ? "80px" : "50px")};
+  padding: 0rem 5%;
+  scale: ${(props) => props.small === false && "1.05"};
 
-
+  background: ${(props) => props.small === false && "#ffffff0"};
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
+  & {
+    background: ${(props) => props.small && "#bebebe"};
+    scale: ${(props) => props.small && "1"};
+    transition: all ease-out 0.3s;
+  }
 `;
 
 export const Content = styled.div`
@@ -38,4 +44,4 @@ export const Navbar = styled.ul`
     font-size: 24px;
     font-weight: 500;
   }
-`
+`;
