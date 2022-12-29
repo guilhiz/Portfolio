@@ -60,6 +60,11 @@ h2 {
   font-weight: 700;
   color: ${(props) => props.theme.title};
 }
+
+a {
+  text-decoration: none;
+  color: ${(props) => props.theme.text};
+}
 `;
 
 export default GlobalStyle;

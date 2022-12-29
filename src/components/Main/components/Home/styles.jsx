@@ -32,7 +32,7 @@ export const ContainerText = styled.div`
 export const ContainerImg = styled.div`
   width: 300px;
   height: 300px;
-  background: linear-gradient(145deg, #cacaca1a, #b3bdc2);
+  background: linear-gradient(140deg, #cacaca36, #ffffff6d);
   border-radius: 50%;
 
   img {

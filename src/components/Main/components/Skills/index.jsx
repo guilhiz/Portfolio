@@ -1,10 +1,10 @@
 import React from "react";
 import * as S from "./styles";
-import skillSvg from "../../../../assets/devskills.png";
+import skillSvg from "../../../../assets/dev-skills.png";
 
 function Skills() {
   return (
-    <S.Container>
+    <S.Container id="skills">
       <S.Content>
         <h2>Habilidades</h2>
         <S.ContainerSkills>

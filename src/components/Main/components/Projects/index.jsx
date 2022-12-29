@@ -3,7 +3,7 @@ import * as S from "./styles";
 
 function Projects() {
   return (
-    <S.Container>
+    <S.Container id="projects">
       <S.Content>
         <h2>Principais Projetos</h2>
         <S.ContainerCarousel>

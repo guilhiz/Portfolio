@@ -28,7 +28,7 @@ function Home() {
   }, [vantaEffect]);
 
   return (
-    <S.Container ref={vantaRef}>
+    <S.Container ref={vantaRef} id="home">
       <S.Content>
         <S.ContainerText>
           <h2>Guilherme Vilela</h2>
