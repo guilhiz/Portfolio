@@ -1,10 +1,10 @@
-import "reset-css";
+import Main from "./Main";
 
 function App() {
   return (
-    <div>
-      <h1>Salve cria</h1>
-    </div>
+    <>
+      <Main />
+    </>
   );
 }
 
