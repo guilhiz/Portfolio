@@ -1,12 +1,12 @@
 import React from "react";
-import "reset-css";
 import GlobalStyle from "../../styles/GlobalStyle";
+
 import { ThemeProvider } from "styled-components";
 import { lightTheme } from "../../theme";
 import Home from "./components/Home";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
-// import { Container } from './styles';
 
 function Main() {
   return (
@@ -14,6 +14,7 @@ function Main() {
       <GlobalStyle />
       <Home />
       <Skills />
+      <Projects />
     </ThemeProvider>
   );
 }
