@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import profileImg from "../../../../assets/profile.jpeg";
+import Typewriter from "typewriter-effect";
 import CLOUDS from "vanta/dist/vanta.clouds.min";
 import * as THREE from "three";
+import profileImg from "../../../../assets/profile.jpeg";
 import * as S from "./styles";
 
 function Home() {
@@ -33,7 +34,10 @@ function Home() {
         <S.ContainerText>
           <h2>Guilherme Vilela</h2>
           <p>
-            Desenvolvedor <span>Front-end</span>
+            Desenvolvedor{" "}
+            <span>
+              <Typewriter options={{ strings: ["Front-end", "Back-end"], autoStart: true, loop: true }} />
+            </span>
           </p>
         </S.ContainerText>
         <S.ContainerImg>

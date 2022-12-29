@@ -16,16 +16,20 @@ export const ContainerText = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 30%;
   > h2 {
     margin-bottom: 8px;
   }
   > p {
+    display: flex;
     font-size: 30px;
     font-weight: 500;
     color: ${(props) => props.theme.text};
+    width: 90%;
   }
   span {
     color: ${(props) => props.theme.highlight};
+    margin-left: 5px;
   }
 `;
 

@@ -12,6 +12,7 @@
     "reset-css": "^5.0.1",
     "styled-components": "^5.3.6",
     "three": "^0.121.0",
+    "typewriter-effect": "^2.19.0",
     "vanta": "^0.5.24",
     "web-vitals": "^2.1.4"
   },
