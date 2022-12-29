@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 0px 100px;
+  padding: 0px 8%;
 `;
 
 export const Content = styled.section`
@@ -17,9 +17,6 @@ export const ContainerText = styled.div`
   flex-direction: column;
   align-items: center;
   > h2 {
-    font-size: 36px;
-    font-weight: 700;
-    color: ${(props) => props.theme.title};
     margin-bottom: 8px;
   }
   > p {
@@ -33,8 +30,8 @@ export const ContainerText = styled.div`
 `;
 
 export const ContainerImg = styled.div`
-  width: 280px;
-  height: 280px;
+  width: 300px;
+  height: 300px;
   background: linear-gradient(145deg, #cacaca1a, #b3bdc2);
   border-radius: 50%;
 

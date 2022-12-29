@@ -11,6 +11,12 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: inherit;
 }
 
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: ${(props) => props.theme.title};
+}
+
 `;
 
 export default GlobalStyle;
