@@ -20,25 +20,25 @@ function Header() {
         </h1>
         <S.Navbar>
           <li>
-            <Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500}>
+            <Link activeClass="active" to="home" spy={true} smooth={true} offset={-100} duration={500}>
               Home
             </Link>
             <div></div>
           </li>
           <li>
-            <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-50} duration={500}>
+            <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-40} duration={500}>
               Habilidades
             </Link>
             <div></div>
           </li>
           <li>
-            <Link activeClass="active" to="projects" spy={true} smooth={true} offset={50} duration={500}>
+            <Link activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={500}>
               Projetos
             </Link>
             <div></div>
           </li>
           <li>
-            <Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500}>
+            <Link activeClass="active" to="contacts" spy={true} smooth={true} offset={50} duration={500}>
               Contatos
             </Link>
             <div></div>

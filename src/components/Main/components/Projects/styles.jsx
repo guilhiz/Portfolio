@@ -28,8 +28,7 @@ export const ContainerCarousel = styled.div`
   .carousel {
     height: 100%;
     width: 100%;
-    padding: 25px;
-    padding-right: 300px;
+    padding: 25px 300px 35px 25px;
     background-color: #bebebe6e;
   }
 
@@ -82,16 +81,14 @@ export const ProjectTitle = styled.h3`
   text-align: center;
 `;
 
-export const CardImg = styled.div``;
-
 export const ButtonInfo = styled.button`
   transform: translate(-50%, 125%);
-  width: 60%;
+  width: 50%;
   border-radius: 1rem;
   border: none;
   background-color: ${(props) => props.theme.highlight};
   color: ${(props) => props.theme.textBtn};
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   padding: 0.5rem 1rem;
   position: absolute;
