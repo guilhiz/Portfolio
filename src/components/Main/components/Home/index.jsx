@@ -1,32 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import Typewriter from "typewriter-effect";
-import CLOUDS from "vanta/dist/vanta.clouds.min";
-import * as THREE from "three";
 import profileImg from "../../../../assets/profile.jpeg";
+import { useVanta } from "./hooks";
 import * as S from "./styles";
 
 function Home() {
-  const [vantaEffect, setVantaEffect] = useState(0);
-  const vantaRef = useRef(null);
-
-  useEffect(() => {
-    if (!vantaEffect) {
-      setVantaEffect(
-        CLOUDS({
-          el: vantaRef.current,
-          THREE: THREE,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.0,
-          minWidth: 200.0,
-        })
-      );
-    }
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-    };
-  }, [vantaEffect]);
+const { vantaRef } = useVanta()
 
   return (
     <S.Container ref={vantaRef} id="home">

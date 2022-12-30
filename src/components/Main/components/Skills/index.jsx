@@ -1,23 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
 import * as S from "./styles";
 import skillSvg from "../../../../assets/dev-skills.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { useSkills } from "./hooks";
+
 
 function Skills() {
-  const [display, setDisplay] = useState(false)
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () => (window.pageYOffset > 360) && setDisplay(true));
-    }
-
-  }, []);
-
+  const {display} = useSkills();
   return (
     <S.Container id="skills">
       <S.Content>

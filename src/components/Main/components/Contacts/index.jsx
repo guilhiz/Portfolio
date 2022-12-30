@@ -1,17 +1,12 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
+import { useAos } from "../../../../hooks";
 import email from "../../../../assets/email.png";
 import github from "../../../../assets/github.png";
 import linkedin from "../../../../assets/linkedin.png";
 import * as S from "./styles";
 
 function Contacts() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
+  useAos();
 
   return (
     <S.Container id="contacts">

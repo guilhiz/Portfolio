@@ -1,15 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useScroll } from "./hooks";
 import { Link } from "react-scroll";
 import * as S from "./styles";
 
 function Header() {
-  const [small, setSmall] = useState(false);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () => setSmall(window.pageYOffset > 80));
-    }
-  }, []);
+  const { small } = useScroll();
 
   return (
     <S.Container small={small}>

@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
+import { useProject } from "./hooks";
 import projects from "./mock";
 import * as S from "./styles";
 import arrowLeft from "../../../../assets/arrow-left.png";
@@ -9,21 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 function Projects() {
-  const [swiper, setSwiper] = useState(undefined);
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
-
-  const handlerClick = (direction) => {
-    if (direction === "next") {
-      swiper.slideNext();
-      return;
-    }
-    swiper.slidePrev();
-  };
-
+  const { setSwiper, handlerClick } = useProject();
   return (
     <S.Container id="projects">
       <S.Content>
