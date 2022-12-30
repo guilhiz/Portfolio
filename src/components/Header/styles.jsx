@@ -39,7 +39,7 @@ export const Navbar = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 30%;
+  gap: 1rem;
   li {
     position: relative;
     :hover {

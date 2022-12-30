@@ -20,28 +20,26 @@ export const Content = styled.section`
 `;
 
 export const ContainerCarousel = styled.div`
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
   width: 100%;
   height: 72%;
   .carousel {
-    height: 100%;
+    display: flex;
+    height: 500px;
     width: 100%;
-    padding: 25px 300px 35px 25px;
+    padding: 30px;
     background-color: #bebebe6e;
+    flex-shrink: 100 !important;
   }
 
   .card {
-    height: 100%;
-    width: 500px;
+    max-width: 500px;
+    height: auto;
     border-radius: 20px;
     background: linear-gradient(225deg, #ffffff 0%, #cacaca 100%);
     position: relative;
     padding: 0px 1rem;
     border: 2px solid #c3c6ce;
     transition: 0.5s ease-out;
-
     :hover {
       border-color: ${(props) => props.theme.highlight};
       box-shadow: 0 8px 11px #23232386;
@@ -51,34 +49,31 @@ export const ContainerCarousel = styled.div`
         opacity: 1;
       }
     }
-
-    p {
-      font-size: 1.2em;
-      color: ${(props) => props.theme.text};
-      height: 15%;
-    }
   }
+`;
+export const ProjectTitle = styled.h3`
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 15px 0px;
+  color: ${(props) => props.theme.title};
+  text-align: center;
+`;
+
+export const CardText = styled.p`
+  font-size: 1.2rem;
+  color: ${(props) => props.theme.text};
+  height: 15%;
 `;
 
 export const ContainerImg = styled.div`
   height: 65%;
   width: 100%;
-  margin-bottom: 25px;
-  box-shadow: 0px 0px 4px #23232386;
-
+  box-shadow: 0px 0px 4px #3a3a3a85;
   img {
     display: block;
     width: 100%;
     height: 100%;
   }
-`;
-
-export const ProjectTitle = styled.h3`
-  font-size: 1.5em;
-  font-weight: 700;
-  margin: 15px 0px;
-  color: ${(props) => props.theme.title};
-  text-align: center;
 `;
 
 export const ButtonInfo = styled.button`
@@ -98,6 +93,6 @@ export const ButtonInfo = styled.button`
   cursor: pointer;
   transition: 0.3s ease-out;
   :hover {
-    background-color: #4827E7;
+    background-color: #4827e7;
   }
 `;

@@ -18,7 +18,7 @@ const projects = [
     title: "ZapRecall",
     description:
       "ZapRecall é um app flashcards que pode ajudá-lo a estudar usando as abordagens Active Recall e Spaced Repetition.",
-    img: "https://user-images.githubusercontent.com/109693663/205540941-eb531ba9-7399-4572-89f1-c0a4b5c84fbf.gif",
+    img: "https://user-images.githubusercontent.com/109693663/210114416-9561f5ed-1f31-4f40-9f15-cd3916c78162.png",
     link: "https://github.com/guilhiz/ZapRecall",
   },
 
@@ -26,7 +26,7 @@ const projects = [
     title: "GitHub timeline",
     description:
       "GitHub timeline é um site que constrói uma timeline contendo cada repositório com seu nome, data de criação e suas descrições.",
-    img: "https://user-images.githubusercontent.com/109693663/209854415-c3291957-fb51-4c29-9bf4-bbad8aef427b.gif",
+    img: "https://user-images.githubusercontent.com/109693663/210114480-7ac492cf-5313-45d8-8988-bf2335650c45.png",
     link: "https://github.com/guilhiz/GitHub-Timeline",
   },
 
@@ -34,7 +34,7 @@ const projects = [
     title: "Jogo da forca",
     description:
       "O projeto consiste na recriação do jogo da força utilizando React. O objetivo era treinar lógica de programação e se divertir jogando!",
-    img: "https://user-images.githubusercontent.com/109693663/204359100-4d25da30-1cf0-4c66-ad52-e8f818c9165d.gif",
+    img: "https://user-images.githubusercontent.com/109693663/210114563-9bee8f86-496a-4831-a28c-e85961100b65.png",
     link: "https://github.com/guilhiz/Jogo-da-forca",
   },
 
@@ -48,7 +48,7 @@ const projects = [
   {
     title: "Bate papo UOL",
     description: "Para praticar um pouco sobre consumo de APIs e integrações, resolvi fazer o famoso chat do UOL.",
-    img: "https://user-images.githubusercontent.com/109693663/199045515-59bed1c1-5100-4fc1-8a24-09a3d27aae3e.gif",
+    img: "https://user-images.githubusercontent.com/109693663/210114649-148fb69d-3859-43b6-8b18-21818ad25bad.png",
     link: "https://github.com/guilhiz/Bate-Papo-UOL",
   },
 ];
