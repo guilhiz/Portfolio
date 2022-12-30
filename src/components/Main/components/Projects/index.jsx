@@ -9,6 +9,7 @@ import "swiper/css";
 
 function Projects() {
   const { setSwiper, handlerClick } = useProject();
+  
   return (
     <S.Container id="projects">
       <S.Content>

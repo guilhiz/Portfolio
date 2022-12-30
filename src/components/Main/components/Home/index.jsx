@@ -5,7 +5,7 @@ import { useVanta } from "./hooks";
 import * as S from "./styles";
 
 function Home() {
-const { vantaRef } = useVanta()
+  const { vantaRef } = useVanta();
 
   return (
     <S.Container ref={vantaRef} id="home">

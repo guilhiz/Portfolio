@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 
 export const useProject = () => {
   const [swiper, setSwiper] = useState(undefined);
+  
   const handlerClick = (direction) => {
     if (direction === "next") {
       swiper.slideNext();
@@ -18,5 +19,5 @@ export const useProject = () => {
     });
   }, []);
 
-  return {setSwiper, handlerClick};
+  return { setSwiper, handlerClick };
 };

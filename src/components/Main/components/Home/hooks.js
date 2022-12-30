@@ -20,6 +20,7 @@ export const useVanta = () => {
         })
       );
     }
+
     return () => {
       if (vantaEffect) vantaEffect.destroy();
     };

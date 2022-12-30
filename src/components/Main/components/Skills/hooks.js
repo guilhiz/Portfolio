@@ -9,10 +9,12 @@ export const useSkills = () => {
     AOS.init({
       duration: 1000,
     });
+
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", () => window.pageYOffset > 360 && setDisplay(true));
     }
   }, []);
+
   return {
     display,
   };

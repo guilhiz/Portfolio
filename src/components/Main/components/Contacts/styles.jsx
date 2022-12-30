@@ -15,7 +15,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  min-width: 30%;
   margin-top: 5%;
   h3 {
     font-size: 52px;
@@ -42,7 +42,6 @@ export const ContainerIcons = styled.ul`
     cursor: pointer;
     :hover {
       transform: translateY(-7px);
-
     }
   }
 `;

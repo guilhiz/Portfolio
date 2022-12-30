@@ -4,5 +4,4 @@ export const lightTheme = {
   text: "#2B2C34",
   highlight: "#6246EA",
   textBtn: "#FFFFFE",
-  Tertiary: "#E45858",
 };
