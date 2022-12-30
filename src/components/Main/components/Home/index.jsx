@@ -33,12 +33,10 @@ function Home() {
       <S.Content>
         <S.ContainerText>
           <h2>Guilherme Vilela</h2>
-          <p>
-            Desenvolvedor{" "}
-            <span>
-              <Typewriter options={{ strings: ["Front-end", "Back-end"], autoStart: true, loop: true }} />
-            </span>
-          </p>
+          <div>
+            <p>Desenvolvedor</p>
+            <Typewriter options={{ strings: ["Front-end", "Back-end"], autoStart: true, loop: true }} />
+          </div>
         </S.ContainerText>
         <S.ContainerImg>
           <img src={profileImg} alt="Imagem de perfil" />
