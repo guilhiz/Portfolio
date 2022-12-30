@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import email from "../../../../assets/email.png";
 import github from "../../../../assets/github.png";
 import linkedin from "../../../../assets/linkedin.png";
 import * as S from "./styles";
 
 function Contacts() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <S.Container id="contacts">
       <S.Content>
-        <h3>
+        <h3 data-aos="fade-right">
           Guilherme <span>Vilela</span>
         </h3>
-        <S.ContainerIcons>
+        <S.ContainerIcons data-aos="fade-up">
           <div>
             <a href="mailto:guilhermevilelasobral@gmail.com" target="_blank">
               <img src={email} alt="" />

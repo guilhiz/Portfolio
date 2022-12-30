@@ -8,7 +8,6 @@ function Header() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", () => setSmall(window.pageYOffset > 80));
-      console.log("puta");
     }
   }, []);
 
@@ -38,7 +37,7 @@ function Header() {
             <div></div>
           </li>
           <li>
-            <Link activeClass="active" to="contacts" spy={true} smooth={true} offset={50} duration={500}>
+            <Link activeClass="active" to="contacts" spy={true} smooth={true} offset={-300} duration={500}>
               Contatos
             </Link>
             <div></div>
