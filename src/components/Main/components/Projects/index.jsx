@@ -1,17 +1,28 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import projects from "./mock";
 import * as S from "./styles";
+import arrowLeft from "../../../../assets/arrow-left.png";
+import arrowRight from "../../../../assets/arrow-right.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 function Projects() {
+  const [swiper, setSwiper] = useState(undefined);
   useEffect(() => {
     AOS.init({
       duration: 1000,
     });
   }, []);
+
+  const handlerClick = (direction) => {
+    if (direction === "next") {
+      swiper.slideNext();
+      return;
+    }
+    swiper.slidePrev();
+  };
 
   return (
     <S.Container id="projects">
@@ -19,16 +30,13 @@ function Projects() {
         <h2 data-aos="fade-up">Principais Projetos</h2>
         <S.ContainerCarousel data-aos="fade-up">
           <Swiper
-            spaceBetween={30}
-            slidesPerView={2}
+            spaceBetween={50}
             className="carousel"
             grabCursor="true"
-            breakpoints={{
-              600: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              },
+            onSwiper={(s) => {
+              setSwiper(s);
             }}
+            slidesPerView={2}
           >
             {projects.map((p) => (
               <SwiperSlide key={p.title} className="card">
@@ -41,6 +49,10 @@ function Projects() {
               </SwiperSlide>
             ))}
           </Swiper>
+
+          <S.ArrowLeft onClick={() => handlerClick("prev")} src={arrowLeft} alt="seta cartão anterior" />
+
+          <S.ArrowRight onClick={() => handlerClick("next")} src={arrowRight} alt="seta proximo cartão" />
         </S.ContainerCarousel>
       </S.Content>
     </S.Container>

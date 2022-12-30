@@ -22,6 +22,7 @@ export const Content = styled.section`
 export const ContainerCarousel = styled.div`
   width: 100%;
   height: 72%;
+  position: relative;
   .carousel {
     display: flex;
     height: 500px;
@@ -94,5 +95,30 @@ export const ButtonInfo = styled.button`
   transition: 0.3s ease-out;
   :hover {
     background-color: #4827e7;
+  }
+`;
+
+export const ArrowLeft = styled.img`
+  display: block;
+  width: 32px;
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  z-index: 999;
+  cursor: pointer;
+  :hover {
+    opacity: 0.6;
+  }
+`;
+export const ArrowRight = styled.img`
+  display: block;
+  width: 32px;
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  z-index: 999;
+  cursor: pointer;
+  :hover {
+    opacity: 0.6;
   }
 `;
