@@ -40,5 +40,20 @@ export const ContainerSkills = styled.div`
 `;
 
 export const Skills = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px 0px;
+`;
+
+export const ContainerProgressBar = styled.div`
+  width: 100%;
+  height: 80px;
+  padding: 8px;
   background-color: #bebebe6e;
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
 `;

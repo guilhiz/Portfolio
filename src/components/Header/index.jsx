@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import * as S from "./styles";
 
 function Header() {
@@ -7,7 +8,7 @@ function Header() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", () => setSmall(window.pageYOffset > 80));
-      console.log("puta")
+      console.log("puta");
     }
   }, []);
 
@@ -19,16 +20,28 @@ function Header() {
         </h1>
         <S.Navbar>
           <li>
-            <a href="#home">Home</a>
+            <Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500}>
+              Home
+            </Link>
+            <div></div>
           </li>
           <li>
-            <a href="#skills">Habilidades</a>
+            <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-50} duration={500}>
+              Habilidades
+            </Link>
+            <div></div>
           </li>
           <li>
-            <a href="#projects">Projetos</a>
+            <Link activeClass="active" to="projects" spy={true} smooth={true} offset={50} duration={500}>
+              Projetos
+            </Link>
+            <div></div>
           </li>
           <li>
-            <a href="">Contatos</a>
+            <Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500}>
+              Contatos
+            </Link>
+            <div></div>
           </li>
         </S.Navbar>
       </S.Content>

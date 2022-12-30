@@ -41,7 +41,29 @@ export const Navbar = styled.ul`
   justify-content: space-between;
   width: 30%;
   li {
+    position: relative;
+    :hover {
+      div {
+        width: 100%;
+      }
+    }
+  }
+  a {
     font-size: 24px;
     font-weight: 500;
+    cursor: pointer;
+    :hover {
+      color: ${(props) => props.theme.highlight};
+      div {
+        width: 100%;
+      }
+    }
+  }
+  div {
+    position: absolute;
+    background-color: ${(props) => props.theme.highlight};
+    width: 0%;
+    height: 3px;
+    transition: all ease-in 0.3s;
   }
 `;
