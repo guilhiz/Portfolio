@@ -118,6 +118,9 @@ export const ArrowLeft = styled.img`
   :hover {
     opacity: 0.6;
   }
+  @media (max-width: 500px) {
+    left: -33px;
+  }
 `;
 export const ArrowRight = styled.img`
   display: block;
@@ -129,5 +132,8 @@ export const ArrowRight = styled.img`
   cursor: pointer;
   :hover {
     opacity: 0.6;
+  }
+  @media (max-width: 500px) {
+    right: -33px;
   }
 `;

@@ -40,6 +40,9 @@ export const Navbar = styled.ul`
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  @media (max-width: 800px) {
+    display: none;
+  }
   li {
     position: relative;
     :hover {

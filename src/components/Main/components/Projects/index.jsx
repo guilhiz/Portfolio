@@ -40,6 +40,10 @@ function Projects() {
                 spaceBetween: 50,
                 slidesPerView: 2,
               },
+              1200: {
+                spaceBetween: 20,
+                slidesPerView: 3,
+              },
             }}
           >
             {projects.map((p) => (

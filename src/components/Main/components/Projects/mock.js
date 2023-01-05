@@ -22,14 +22,14 @@ const projects = [
   {
     title: "GitHub timeline",
     description:
-      "GitHub timeline é um site que constrói uma timeline contendo cada repositório com seu nome, data de criação e suas descrições.",
+      "GitHub timeline constrói uma timeline contendo cada repositório com seu nome, data de criação e suas descrições.",
     img: "https://user-images.githubusercontent.com/109693663/210114480-7ac492cf-5313-45d8-8988-bf2335650c45.png",
     link: "https://github.com/guilhiz/GitHub-Timeline",
   },
   {
     title: "Jogo da forca",
     description:
-      "O projeto consiste na recriação do jogo da força utilizando React. O objetivo era treinar lógica de programação e se divertir jogando!",
+      "O projeto consiste na recriação do jogo da força utilizando React. O objetivo era treinar lógica de programação e se divertir!",
     img: "https://user-images.githubusercontent.com/109693663/210114563-9bee8f86-496a-4831-a28c-e85961100b65.png",
     link: "https://github.com/guilhiz/Jogo-da-forca",
   },

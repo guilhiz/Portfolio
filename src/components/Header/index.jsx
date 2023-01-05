@@ -2,6 +2,7 @@ import React from "react";
 import { useScroll } from "./hooks";
 import { Link } from "react-scroll";
 import * as S from "./styles";
+import HamburgerMenu from "../HamburgerMenu";
 
 function Header() {
   const { small } = useScroll();
@@ -12,6 +13,8 @@ function Header() {
         <h1>
           Port<span>fólio</span>
         </h1>
+        {small && <HamburgerMenu />}
+
         <S.Navbar>
           <li>
             <Link activeClass="active" to="home" spy={true} smooth={true} offset={-100} duration={500}>
