@@ -1,6 +1,5 @@
 import React from "react";
 import { useScroll } from "./hooks";
-import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-scroll";
 import * as S from "./styles";
 
