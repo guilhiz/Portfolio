@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export const useProject = () => {
   const [swiper, setSwiper] = useState(undefined);
-  
+
   const handlerClick = (direction) => {
     if (direction === "next") {
       swiper.slideNext();

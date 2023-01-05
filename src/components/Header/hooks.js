@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export const useScroll = () => {
   const [small, setSmall] = useState(false);

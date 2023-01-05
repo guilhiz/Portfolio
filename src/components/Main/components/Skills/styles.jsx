@@ -52,7 +52,7 @@ export const Skills = styled.ul`
   gap: 10px 0px;
   @media (max-width: 600px) {
     width: 100%;
-    }
+  }
 `;
 
 export const ContainerProgressBar = styled.li`
