@@ -5,11 +5,13 @@ import * as S from "./styles";
 import arrowLeft from "../../../../assets/arrow-left.png";
 import arrowRight from "../../../../assets/arrow-right.png";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode } from "swiper";
 import "swiper/css";
+import "swiper/css/free-mode";
 
 function Projects() {
   const { setSwiper, handlerClick } = useProject();
-  
+
   return (
     <S.Container id="projects">
       <S.Content>
@@ -17,21 +19,39 @@ function Projects() {
         <S.ContainerCarousel data-aos="fade-up">
           <Swiper
             spaceBetween={50}
+            slidesPerView={2}
             className="carousel"
-            grabCursor="true"
+            grabCursor={true}
+            freeMode={true}
+            modules={[FreeMode]}
             onSwiper={(s) => {
               setSwiper(s);
             }}
-            slidesPerView={2}
+            breakpoints={{
+              0: {
+                spaceBetween: 30,
+                slidesPerView: 1,
+              },
+              800: {
+                spaceBetween: 50,
+                slidesPerView: 1,
+              },
+              1000: {
+                spaceBetween: 50,
+                slidesPerView: 2,
+              },
+            }}
           >
             {projects.map((p) => (
-              <SwiperSlide key={p.title} className="card">
-                <S.ProjectTitle>{p.title}</S.ProjectTitle>
-                <S.CardText>{p.description}</S.CardText>
-                <S.ContainerImg>
-                  <img src={p.img} alt="Um gif do projeto" />
-                </S.ContainerImg>
-                <S.ButtonInfo onClick={() => window.open(p.link, "_blank")}>Saiba mais</S.ButtonInfo>
+              <SwiperSlide key={p.title}>
+                <S.Card>
+                  <S.ProjectTitle>{p.title}</S.ProjectTitle>
+                  <S.CardText>{p.description}</S.CardText>
+                  <S.ContainerImg>
+                    <img src={p.img} alt="Um gif do projeto" />
+                  </S.ContainerImg>
+                  <S.ButtonInfo onClick={() => window.open(p.link, "_blank")}>Saiba mais</S.ButtonInfo>
+                </S.Card>
               </SwiperSlide>
             ))}
           </Swiper>

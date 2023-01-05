@@ -31,24 +31,23 @@ export const ContainerCarousel = styled.div`
     background-color: #bebebe6e;
     flex-shrink: 100 !important;
   }
+`;
 
-  .card {
-    max-width: 500px;
-    height: auto;
-    border-radius: 20px;
-    background: linear-gradient(225deg, #ffffff 0%, #cacaca 100%);
-    position: relative;
-    padding: 0px 1rem;
-    border: 2px solid #c3c6ce;
-    transition: 0.5s ease-out;
-    :hover {
-      border-color: ${(props) => props.theme.highlight};
-      box-shadow: 0 8px 11px #23232386;
-      scale: 1.01;
-      button {
-        transform: translate(-50%, 50%);
-        opacity: 1;
-      }
+export const Card = styled.div`
+  height: 95%;
+  border-radius: 20px;
+  background: linear-gradient(225deg, #ffffff 0%, #cacaca 100%);
+  position: relative;
+  padding: 0px 1rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  :hover {
+    border-color: ${(props) => props.theme.highlight};
+    box-shadow: 0 8px 11px #23232386;
+    scale: 1.01;
+    button {
+      transform: translate(-50%, 50%);
+      opacity: 1;
     }
   }
 `;
@@ -58,15 +57,25 @@ export const ProjectTitle = styled.h3`
   margin: 15px 0px;
   color: ${(props) => props.theme.title};
   text-align: center;
+  @media (max-width: 500px) {
+    font-size: 1.3rem;
+    margin: 8px 0px;
+  }
 `;
 
 export const CardText = styled.p`
   font-size: 1.2rem;
   color: ${(props) => props.theme.text};
   height: 15%;
+  @media (max-width: 500px) {
+    font-size: 1rem;
+    height: 20%;
+  }
 `;
 
 export const ContainerImg = styled.div`
+  display: flex;
+  align-items: flex-end;
   height: 65%;
   width: 100%;
   box-shadow: 0px 0px 4px #3a3a3a85;

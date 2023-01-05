@@ -1,5 +1,6 @@
 import React from "react";
 import { useScroll } from "./hooks";
+import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-scroll";
 import * as S from "./styles";
 
@@ -32,7 +33,7 @@ function Header() {
             <div></div>
           </li>
           <li>
-            <Link activeClass="active" to="contacts" spy={true} smooth={true} offset={-300} duration={500}>
+            <Link activeClass="active" to="contacts" spy={true} smooth={true} offset={-400} duration={500}>
               Contatos
             </Link>
             <div></div>

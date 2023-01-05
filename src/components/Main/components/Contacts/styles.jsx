@@ -5,7 +5,7 @@ export const Container = styled.div`
   align-items: flex-end;
   justify-content: center;
   width: 100%;
-  height: 60vh;
+  height: 300px;
   padding: 0px 8%;
   background-color: ${(props) => props.theme.background};
   background-image: url("https://www.transparenttextures.com/patterns/large-leather.png");

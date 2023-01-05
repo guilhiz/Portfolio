@@ -32,6 +32,10 @@ export const ContainerSkills = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 600px) {
+      display: none;
+    }
+
     > img {
       display: block;
       width: 80%;
@@ -39,14 +43,19 @@ export const ContainerSkills = styled.div`
   }
 `;
 
-export const Skills = styled.div`
+export const Skills = styled.ul`
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 10px 0px;
+  @media (max-width: 600px) {
+    width: 100%;
+    }
 `;
 
-export const ContainerProgressBar = styled.div`
+export const ContainerProgressBar = styled.li`
   width: 100%;
   height: 80px;
   padding: 8px;

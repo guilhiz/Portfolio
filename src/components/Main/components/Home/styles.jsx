@@ -10,6 +10,10 @@ export const Content = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const ContainerText = styled.div`
@@ -17,6 +21,7 @@ export const ContainerText = styled.div`
   flex-direction: column;
   align-items: center;
   width: 400px;
+
   > h2 {
     margin-bottom: 8px;
   }
@@ -40,6 +45,9 @@ export const ContainerImg = styled.div`
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  @media (max-width: 800px) {
+    display: none;
+  }
 
   img {
     display: block;

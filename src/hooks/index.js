@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 export const useAos = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 2000,
     });
     console.log("dois")
   }, []);
