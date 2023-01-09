@@ -29,6 +29,7 @@ export const Content = styled.div`
     font-size: 42px;
     font-weight: 700;
     color: ${(props) => props.theme.title};
+    cursor: pointer;
     > span {
       color: ${(props) => props.theme.highlight};
     }

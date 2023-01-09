@@ -18,23 +18,53 @@ function Skills() {
           <S.Skills data-aos="fade-up">
             <S.ContainerProgressBar>
               <p>HTML/CSS</p>
-              <ProgressBar completed={display ? 95 : 0} baseBgColor="#ffffff" bgColor="#6246EA" labelColor="#FFFFFF" />
+              <ProgressBar
+                height="5px"
+                isLabelVisible={false}
+                completed={display ? 100 : 0}
+                baseBgColor="#ffffff"
+                bgColor="#6246EA"
+              />
             </S.ContainerProgressBar>
             <S.ContainerProgressBar>
               <p>JavaScript</p>
-              <ProgressBar completed={display ? 86 : 0} baseBgColor="#ffffff" bgColor="#6246EA" labelColor="#FFFFFF" />
+              <ProgressBar
+                height="5px"
+                isLabelVisible={false}
+                completed={display ? 100 : 0}
+                baseBgColor="#ffffff"
+                bgColor="#6246EA"
+              />
             </S.ContainerProgressBar>
             <S.ContainerProgressBar>
               <p>TypeScript</p>
-              <ProgressBar completed={display ? 33 : 0} baseBgColor="#ffffff" bgColor="#6246EA" labelColor="#FFFFFF" />
+              <ProgressBar
+                height="5px"
+                isLabelVisible={false}
+                completed={display ? 100 : 0}
+                baseBgColor="#ffffff"
+                bgColor="#6246EA"
+              />
             </S.ContainerProgressBar>
             <S.ContainerProgressBar>
               <p>React</p>
-              <ProgressBar completed={display ? 67 : 0} baseBgColor="#ffffff" bgColor="#6246EA" labelColor="#FFFFFF" />
+              <ProgressBar
+                height="5px"
+                isLabelVisible={false}
+                completed={display ? 100 : 0}
+                baseBgColor="#ffffff"
+                bgColor="#6246EA"
+              />
             </S.ContainerProgressBar>
             <S.ContainerProgressBar>
               <p>Node</p>
-              <ProgressBar completed={display ? 37 : 0} baseBgColor="#ffffff" bgColor="#6246EA" labelColor="#FFFFFF" />
+              <ProgressBar
+                height="5px"
+                isLabelVisible={false}
+                completed={display ? 100 : 0}
+                baseBgColor="#ffffff"
+                bgColor="#6246EA"
+              />
             </S.ContainerProgressBar>
           </S.Skills>
         </S.ContainerSkills>

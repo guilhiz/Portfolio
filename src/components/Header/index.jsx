@@ -10,9 +10,11 @@ function Header() {
   return (
     <S.Container small={small}>
       <S.Content>
-        <h1>
-          Port<span>fólio</span>
-        </h1>
+        <Link activeClass="active" to="home" spy={true} smooth={true} offset={-100} duration={500}>
+          <h1>
+            Port<span>fólio</span>
+          </h1>
+        </Link>
         {small && <HamburgerMenu />}
 
         <S.Navbar>

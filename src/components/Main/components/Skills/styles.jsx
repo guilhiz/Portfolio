@@ -56,6 +56,9 @@ export const Skills = styled.ul`
 `;
 
 export const ContainerProgressBar = styled.li`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 80px;
   padding: 8px;
